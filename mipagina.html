@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Engineer Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "corporate-blue": "#001d6c", // Deep corporate background
+                        "action-blue": "#0f62fe",    // Vibrant IBM-style accent
+                        "text-white": "#ffffff",
+                        "background-light": "#f4f4f4",
+                        "background-dark": "#001d6c", // Matching corporate blue for dark mode bg
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"}, // IBM style is often sharper, less rounded, but user didn't explicitly ask for shape changes, keeping it minimalist. Actually, IBM design often uses sharp corners or minimal radius. I will reduce radius to match 'sober' corporate feel.
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }.rounded-xl, .rounded-lg, .rounded-full {
+        border-radius: 0 !important;}
+    button.rounded-full {
+        border-radius: 0 !important;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#161616] dark:text-text-white font-display overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col group/design-root">
+<header class="sticky top-0 z-50 flex items-center bg-white dark:bg-[#001d6c] p-4 border-b border-[#e0e0e0] dark:border-[#393939] justify-between h-12">
+<h2 class="text-[#161616] dark:text-white text-lg font-bold leading-tight tracking-tight flex-1">Germán Devís Serrano</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-12 bg-transparent text-[#161616] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0 hover:bg-[#e0e0e0] dark:hover:bg-[#353535] transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">menu</span>
+</button>
+</div>
+</header>
+<section class="@container">
+<div class="@[480px]:p-0">
+<div class="relative flex min-h-[520px] flex-col gap-6 overflow-hidden items-start justify-center p-8 text-left bg-corporate-blue">
+<div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-20" data-alt="abstract geometric dark blue data server pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkWoA1CbrBFpib_01NRTfRJY8Ez5nuCWn7WHAih17CJjIw-mY4dkTcJ50wTxgie_eKPXC_P76gsb3zhnebAzgh3Fch0zFMbP1TFxsZ1AjWwg4ITirrdFgWkTl4N-K2vMxn1RNZEwqUZKWnGKGZWt1W_QvQHsvL8w1Szk3sxFN-uMFA1Rwb6tZxzpqXw3R2Tj-0YmDCT_NR9yEs_muRze9-Di46v6o8PCFJqCXQeUI9jwlRfCH1vYucWcZ8jWO6T6YM2wUsuOmdUoYg"); filter: grayscale(100%);'></div>
+<div class="absolute inset-0 z-10" style="background: linear-gradient(180deg, rgba(0, 29, 108, 0.9) 0%, rgba(0, 29, 108, 0.95) 100%);"></div>
+<div class="relative z-20 flex flex-col gap-8 max-w-[720px] ml-0 md:ml-8">
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-5xl font-bold leading-tight tracking-tighter @[480px]:text-6xl">
+                                Architecting Scalable <br/> Data Solutions
+                            </h1>
+<h2 class="text-gray-300 text-lg font-light leading-relaxed max-w-[600px]">
+                                Transforming complex chaos into streamlined clarity. Engineering the systems that make intelligence possible.
+                            </h2>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-between h-12 px-6 bg-action-blue text-white text-sm font-medium leading-normal hover:bg-[#0043ce] transition-all">
+<span class="truncate"><a href="./portfolio.html">View Portfolio</a></span>
+<span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+</button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-between h-12 px-6 bg-transparent border border-white text-white text-sm font-medium leading-normal hover:bg-white hover:text-corporate-blue transition-all">
+<span class="truncate"><a href="https://www.linkedin.com/in/germandevis/">Contact me</a> </span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-4 bg-[#f4f4f4] dark:bg-[#161616]">
+<div class="max-w-[960px] mx-auto">
+<h3 class="text-[#161616] dark:text-white text-2xl font-light mb-8 border-b border-[#e0e0e0] dark:border-[#393939] pb-4">Key Metrics</h3>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-0 border-t border-l border-[#e0e0e0] dark:border-[#393939]">
+<div class="flex flex-col gap-4 p-8 bg-white dark:bg-[#262626] border-r border-b border-[#e0e0e0] dark:border-[#393939]">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-action-blue" style="font-size: 24px;">history</span>
+<p class="text-[#525252] dark:text-[#c6c6c6] text-xs font-semibold uppercase tracking-widest">Experience</p>
+</div>
+<p class="text-[#161616] dark:text-white tracking-tighter text-5xl font-light">1</p>
+<p class="text-[#525252] dark:text-[#c6c6c6] text-sm">Year in Data & Cloud Engineering</p>
+</div>
+<div class="flex flex-col gap-4 p-8 bg-white dark:bg-[#262626] border-r border-b border-[#e0e0e0] dark:border-[#393939]">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-action-blue" style="font-size: 24px;">account_tree</span>
+<p class="text-[#525252] dark:text-[#c6c6c6] text-xs font-semibold uppercase tracking-widest">Pipelines</p>
+</div>
+<p class="text-[#161616] dark:text-white tracking-tighter text-5xl font-light">3</p>
+<p class="text-[#525252] dark:text-[#c6c6c6] text-sm">End-to-End Solutions</p>
+</div>
+<div class="flex flex-col gap-4 p-8 bg-white dark:bg-[#262626] border-r border-b border-[#e0e0e0] dark:border-[#393939]">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-action-blue" style="font-size: 24px;">database</span>
+<p class="text-[#525252] dark:text-[#c6c6c6] text-xs font-semibold uppercase tracking-widest">Formation</p>
+</div>
+<p class="text-[#161616] dark:text-white tracking-tighter text-5xl font-light">Big Data & Cloud</p>
+<p class="text-[#525252] dark:text-[#c6c6c6] text-sm">EDEM Escuela de Empresarios</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 border-y border-[#e0e0e0] dark:border-[#393939] bg-[#f4f4f4] dark:bg-[#161616]">
+<div class="flex flex-wrap justify-center gap-12 md:gap-16 opacity-80 px-6">
+<div class="flex flex-col items-center gap-3 group cursor-pointer hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-5xl text-[#525252] dark:text-[#c6c6c6] group-hover:text-action-blue">cloud</span>
+<span class="text-xs font-mono uppercase text-[#525252] dark:text-[#c6c6c6]">AWS/GCP</span>
+</div>
+<div class="flex flex-col items-center gap-3 group cursor-pointer hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-5xl text-[#525252] dark:text-[#c6c6c6] group-hover:text-action-blue">terminal</span>
+<span class="text-xs font-mono uppercase text-[#525252] dark:text-[#c6c6c6]">Python</span>
+</div>
+<div class="flex flex-col items-center gap-3 group cursor-pointer hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-5xl text-[#525252] dark:text-[#c6c6c6] group-hover:text-action-blue">storage</span>
+<span class="text-xs font-mono uppercase text-[#525252] dark:text-[#c6c6c6]">SQL</span>
+</div>
+<div class="flex flex-col items-center gap-3 group cursor-pointer hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-5xl text-[#525252] dark:text-[#c6c6c6] group-hover:text-action-blue">waves</span>
+<span class="text-xs font-mono uppercase text-[#525252] dark:text-[#c6c6c6]">Kafka</span>
+</div>
+<div class="flex flex-col items-center gap-3 group cursor-pointer hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-5xl text-[#525252] dark:text-[#c6c6c6] group-hover:text-action-blue">deployed_code</span>
+<span class="text-xs font-mono uppercase text-[#525252] dark:text-[#c6c6c6]">Docker</span>
+</div>
+</div>
+</section>
+<footer class="flex flex-col gap-8 px-5 py-16 text-center bg-[#262626] text-white">
+<div class="flex flex-col gap-4 items-center">
+<h4 class="text-2xl font-light text-white">Let's build something scalable.</h4>
+<a class="text-action-blue hover:text-white hover:underline transition-all font-medium text-lg" href="mailto:ger14devis@gmail.com">ger14devis@gmail.com</a>
+</div>
+<div class="flex justify-center gap-8">
+<a class="p-2 hover:bg-[#393939] transition-colors" href="#">
+<span class="material-symbols-outlined text-[#c6c6c6] hover:text-white" style="font-size: 24px;">work</span>
+</a>
+<a class="p-2 hover:bg-[#393939] transition-colors" href="#">
+<span class="material-symbols-outlined text-[#c6c6c6] hover:text-white" style="font-size: 24px;">code</span>
+</a>
+<a class="p-2 hover:bg-[#393939] transition-colors" href="#">
+<span class="material-symbols-outlined text-[#c6c6c6] hover:text-white" style="font-size: 24px;">chat_bubble</span>
+</a>
+</div>
+<p class="text-[#8d8d8d] text-xs font-normal leading-normal uppercase tracking-widest">© 2026 Germán Devís Data Engineering. All rights reserved.</p>
+</footer>
+</div>
+</body></html>
